@@ -54,7 +54,7 @@ em {
     color: #000000;
 }
 
-em#country {
+em.country {
     font-style: italic;
     color: crimson;
 }
@@ -67,7 +67,7 @@ em.movie {
     color: #B8860B;
 }
 
-em#more {
+em.more {
     color: #FF0000;
 }
 
@@ -79,7 +79,7 @@ a:hover {
     text-decoration: underline;
 }
 
-dl {
+dt {
     color: #B8860B;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10pt;
