@@ -32,7 +32,7 @@ a:hover {
     text-decoration: underline;
 }
 
-aside#right {
+aside.right {
     position: absolute;
     right: 5px;
 }
