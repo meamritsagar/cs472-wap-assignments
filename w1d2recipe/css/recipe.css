@@ -1,0 +1,59 @@
+/* Recipe CSS Styling */
+/* All Extra Features is Completed */
+h1 span {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    font-size: 18pt;
+    letter-spacing: 0.25em;
+
+}
+
+h1#mainHeading {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+body {
+    color: #404040;
+    background-color: #FFFFFF;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+    background-image: url("../images/silverware.jpg");
+    /* background-position: center; */
+    background-attachment: fixed;
+}
+
+a {
+    color: #A4A400;
+}
+
+abbr {
+    text-decoration: underline;
+}
+
+aside#rightAllign {
+    position: absolute;
+    right: 0px;
+}
+
+pre#rightAllign {
+    position: absolute;
+    right: 0px;
+    font-family: monospace;
+}
+
+em {
+    font-weight: bold;
+}
+
+p#userComment {
+    font-style: italic;
+    background-color: #FFFFA8;
+}
+
+ul {
+    list-style-image: url("../images/pie_icon.gif");
+}
