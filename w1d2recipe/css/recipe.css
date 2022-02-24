@@ -36,12 +36,12 @@ abbr {
 
 aside#right {
     position: absolute;
-    right: 0px;
+    right: 5px;
 }
 
 pre#rightAllign {
     position: absolute;
-    right: 0px;
+    right: 5px;
     font-family: monospace;
 }
 
