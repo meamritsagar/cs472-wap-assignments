@@ -15,6 +15,7 @@ h1 {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 3px 3px #999999;
     position: relative;
+    text-align: center;
 }
 
 #banner {
@@ -26,10 +27,6 @@ h1 {
     display: block;
     width: 800px;
     margin: auto;
-}
-
-h1 {
-    text-align: center;
 }
 
 #container {
@@ -102,7 +99,7 @@ dt {
     margin-top: 10pt;
 }
 
-ul.no-bullets {
+.no-bullets {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -135,7 +132,7 @@ img.floatLeft {
     margin-right: 5px;
 }
 
-p.box {
+.box {
     display: block;
     border: 2px solid gray;
     background-color: #E8DC9B;
@@ -147,14 +144,15 @@ p.box {
     margin-bottom: 20pt;
 }
 
-span.reviewer {
+.reviewer {
     font-style: italic;
     margin-bottom: 20pt;
 }
 
-p#footer {
+#footer {
     display: block;
     width: 100%;
+    z-index: -1;
     text-align: center;
     line-height: 2em;
     position: absolute;
@@ -164,7 +162,7 @@ p#footer {
     background-color: #A2B964;
 }
 
-div#validator {
+#validator {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -172,6 +170,6 @@ div#validator {
     float: right;
 }
 
-div#main-container {
+#main-container {
     display: flex;
 }
