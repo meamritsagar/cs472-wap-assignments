@@ -1,0 +1,177 @@
+/* CSS Styling for Movie Review Page */
+
+body {
+    background-image: url("../tmnt_images/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+h1 {
+    font-size: 24pt;
+    font-weight: bold !important;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+    position: relative;
+}
+
+#banner {
+    height: 50px;
+    background-image: url("../tmnt_images/bannerbg.png");
+}
+
+#banner span.banner {
+    display: block;
+    width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    display: block;
+    min-width: 800px;
+    width: 800px;
+    margin: auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+    position: relative;
+    overflow: auto;
+}
+
+div span.rotten-img img {
+    border-top-left-radius: 16px;
+}
+
+div span.vertical-text {
+    vertical-align: top;
+}
+
+#most-left {
+    display: block;
+    width: 550px;
+    min-width: 550px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+}
+
+#most-right {
+    display: block;
+    width: 250px;
+    min-width: 250px;
+    float: right;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+}
+
+#most-right img {
+    border-top-right-radius: 16px;
+    object-fit: fill;
+}
+
+div#critics {
+    display: block;
+    width: auto;
+    height: 83px;
+    background-image: url("../tmnt_images/rbg.png");
+    border-top-left-radius: 16px;
+    font-size: 48pt;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.general-overview {
+    background-color: #A2B964;
+    border-top-right-radius: 16px;
+}
+
+dl.left-margin {
+    margin-left: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10pt;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#left {
+    display: block;
+    width: 47%;
+    min-width: 47%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 1%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#right {
+    display: block;
+    width: 47%;
+    min-width: 47%;
+    float: right;
+    margin-right: 2%;
+    margin-left: 1%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img.floatLeft {
+    float: left;
+    margin-right: 5px;
+}
+
+p.box {
+    display: block;
+    border: 2px solid gray;
+    background-color: #E8DC9B;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+    box-sizing: border-box;
+    overflow: auto;
+    margin-bottom: 20pt;
+}
+
+span.reviewer {
+    font-style: italic;
+    margin-bottom: 20pt;
+}
+
+p#footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0px;
+    background-color: #A2B964;
+}
+
+div#validator {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    float: right;
+}
+
+div#main-container {
+    display: flex;
+}
