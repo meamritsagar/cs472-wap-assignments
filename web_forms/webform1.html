@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Forms-1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+<body>
+    <main>
+      <form class="p-5" validate>
+          <div class="form-group mb-4">
+            <label for="inputEmail">Email address<span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" title="Please enter a valid email" autofocus required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group mb-4">
+            <label for="inputPassword">Password<span class="text-danger">*</span></label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" pattern="(?=^.{10,}$)(?=.*\d)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" title="Pasword must be at least 10 Characters and contains, 1 Capital Letter, 1 Small Letter, 1 Digit. Blankspace is not allowed." required>
+          </div>
+          <div class="form-group mb-4">
+            <label for="inputWebsite">Website<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="inputWebsite" aria-describedby="webHelp" placeholder="Enter website" title="Please enter a valid website" pattern="https?:\/\/.*" required>
+          </div>
+          <div class="form-check mb-4">
+            <input type="checkbox" class="form-check-input" id="check" required>
+            <label class="form-check-label" for="check">Check me out<span class="text-danger">*</span></label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

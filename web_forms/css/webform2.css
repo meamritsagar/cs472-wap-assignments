@@ -1,0 +1,22 @@
+.navbar .navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    border-left: 2px solid #FFFFFF;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

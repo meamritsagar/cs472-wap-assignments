@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Forms-2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/form2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4CAFED;">
+            <a class="navbar-brand" href="#" style="color: #FFFFFF;">MUM Golden Dome Market : : : SRM System</a>
+            <div class="container-fluid">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: #FFFFFF;">Products</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #FFFFFF;">Suppliers</a>
+                    </li>
+                </ul>
+                    <span class="topright mr-3" style="color: #FFFFFF;">Hello!</span>
+                    <button class="btn mr-2" type="submit" style="background-color: aliceblue;" style="color: #FFFFFF;">Sign Out</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form class="p-5" validate autocomplete="off">
+            <h2>New Product Form</h2>
+            <div class="d-flex">
+                <div class="col-md-6 col-lg-6">
+                    <div class="form-group mb-4">
+                        <label for="productNumber">Product Number<span class="text-danger">*</span></label>
+                        <input type="number" min="0" class="form-control" id="productNumber" autofocus required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="name">Name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="unitPrice">Unit Price<span class="text-danger">*</span></label>
+                        <input type="number" class="form-control" id="unitPrice" value="0.0" min="0" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="form-group mb-4">
+                        <label for="quantityStock">Quantity in Stock<span class="text-danger">*</span></label>
+                        <input type="number" min="0" value="0" class="form-control" id="quantityStock" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="supplier">Supplier:<span class="text-danger">*</span></label>
+                        <select class="form-control" name="supplier" id="supplier">
+                            <option selected value="select">Select a supplier</option>
+                            <option value="walmart">WallMart</option>
+                            <option value="hyvee">Hy-vee</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="inputDate">Date Supplied<span class="text-danger">*</span></label>
+                        <input type="date" class="form-control" id="inputDate" required>
+                        <small id="inputDate" class="form-text text-muted">Enter a valid Date.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="float-right button-area">
+                <button type="reset" class="btn btn-outline-danger mr-3" value="reset">Reset</button>
+                <button type="cancel" class="btn btn-outline-warning mr-3" value="cancel">Cancel</button>
+                <button type="button" class="btn btn-outline-primary mr-3" value="addProduct">Add Product</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
