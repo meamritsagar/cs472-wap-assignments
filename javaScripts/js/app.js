@@ -167,7 +167,7 @@ document.getElementById("Q6").value = ("The Longest Word length in Array " + inp
 alert("Question-7: Returning Array Longer than Input Characters length");
 // /*
 let iChar = parseFloat(prompt("Enter the length of character i: "));
-
+// Using Imperative Programming
 function filterLongWords(iArray) {
     let resArray = [];
     let j = 0;
@@ -175,10 +175,15 @@ function filterLongWords(iArray) {
         if (iArray[i].length > iChar) {
             resArray[j] = iArray[i];
             j++;
+            // resArray.push(iArray[i]); //"(Push) command" To add an element to Array
         }
     }
     return resArray;
 }
+
+// Using Functional Programmin
+// const filterLongWordsFunc = (iArray, iChar) => iArray.filter(w => w.length > iChar);
+
 // console.log(filterLongWords(inpStringArray));
 document.getElementById("Q7").value = ("Array longer than " + iChar + " in a Array " + inpStringArray + " is: " + filterLongWords(inpStringArray));
 // */
