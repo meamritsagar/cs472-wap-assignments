@@ -1,0 +1,11 @@
+/* CSS for Clock */
+.clockCSS {
+    text-align: center;
+    margin: auto;
+    font-size: 90px;
+    padding: 190pt;
+    text-shadow: 3px 3px gray;
+    background-color: rgb(177, 216, 216);
+    color: rgb(121, 74, 83);
+    letter-spacing: 4px;
+}

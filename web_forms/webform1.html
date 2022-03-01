@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Form-1</title>
     <link rel="shortcut icon" href="./images/webform-icon.png" type="image/x-icon">
+    <script src="./js/webform1.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 <body>
     <main>
-      <form class="p-5" autocomplete="off" validate>
+      <form class="p-5" method = "get" autocomplete="off" validate>
           <div class="form-group mb-4">
             <label for="inputEmail">Email address<span class="text-danger">*</span></label>
             <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" title="Please enter a valid email" autofocus required>
@@ -25,10 +26,10 @@
             <input type="url" class="form-control" id="inputWebsite" aria-describedby="webHelp" placeholder="Enter website" title="Please enter a valid website" pattern="https?:\/\/.*" required>
           </div>
           <div class="form-check mb-4">
-            <input type="checkbox" class="form-check-input" id="check" required>
+            <input type="checkbox" class="form-check-input" id="check" checked required>
             <label class="form-check-label" for="check">Check me out<span class="text-danger">*</span></label>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" id= "submit" class="btn btn-primary">Submit</button>
         </form>
     </main>
 </body>
