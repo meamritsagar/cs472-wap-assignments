@@ -192,14 +192,20 @@ document.getElementById("Q7").value = ("Array longer than " + iChar + " in a Arr
 // console.log("Question-8: Sum of Squares");
 alert("Question-8: Sum of Squares");
 // /*
+// function computeSumOfSquares(arr) {
+//     let sum = 0,
+//         i = arr.length;
+//     while (i--) {
+//       sum += Math.pow(arr[i], 2);
+//     }
+//     return sum;
+//   }
+
+//Alternate
 function computeSumOfSquares(arr) {
-    let sum = 0,
-        i = arr.length;
-    while (i--) {
-      sum += Math.pow(arr[i], 2);
-    }
-    return sum;
-  }
+    return arr.map(n => n * n).reduce((sum, n) => sum + n);
+}
+
 //   console.log(computeSumOfSquares(array));
   document.getElementById("Q8").value = ("The Sum of squares of Array " + array + " is: " + computeSumOfSquares(array));
 // */

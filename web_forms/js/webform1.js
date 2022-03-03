@@ -1,7 +1,8 @@
 // WebForm1 -- To Implement Print the Entered value to Console.
 window.onload = function() {
 
-    function userSubmit() {
+    function userSubmit(e) {
+        // e.preventDefault();
         console.log("Email address: " + document.getElementById("inputEmail").value);
         console.log("Password: " + document.getElementById("inputPassword").value);
         console.log("Website: " + document.getElementById("inputWebsite").value);
