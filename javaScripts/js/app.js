@@ -277,6 +277,8 @@ document.getElementById("Q11Multiply").value = ("The Multiplications of Array us
 alert("Question-12: Find Second Biggest from input number Array");
 // /*
 function findSecondBiggest(arr) { 
+    if (arr.length < 2)
+        throw Error("Array must consists atleast 2 elements.");
     let max = Math.max.apply(null, arr), maxi = arr.indexOf(max);
     arr[maxi] = -Infinity;
     var secondMax = Math.max.apply(null, arr);
@@ -300,6 +302,8 @@ a = parseFloat(prompt("Enter the First Begining Number a: "));
 b = parseFloat(prompt("Enter the First Begining Number b: "))
 
 function printFibo(n, a, b) {
+    if(n === 0) return "";
+    if(n === 1) return a;
     let fiboArray = [], nextFibo = 0;
     for (let i = 1; i <= n; i++) {
         fiboArray[i-1] = a;
