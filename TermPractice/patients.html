@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolyCross Medical Center</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/patients.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html">HolyCross Medical Center</a>
+            <div class="container-fluid">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="./patients.html">Patients</a>
+                    </li>
+                </ul>
+                <span class="topright mr-3">Welcome, Guest</span>
+            </div>
+        </nav>
+    </header>
+    <main class="container p-0 pt-2">
+        <h1>Patients Registration</h1>
+        <hr>
+        <form action="#" method="get">
+            <div>
+                <div class="form-group mb-4 pb-3">
+                    <label for="patientId">*Patient ID No:</label>
+                    <input class="form-control" type="text" name="patientId" id="patientId" placeholder="EP-XXX-XXXXXX" required pattern="(EP|P)-\d{3}-\d{6}" title="Patient ID should be in format 'EP-XXX-XXXXXX' or 'P-XXX-XXXXXX'">
+                    <small>Enter the Patient ID Number, in the specified format.</small>
+                </div>
+                <div class="d-flex m-0 pb-4">
+                    <div class="col-md-4 col-lg-4 pl-0">
+                        <label for="firstName">*First Name:</label>
+                        <input class="form-control" type="text" name="firstName" id="firstName" placeholder="Enter First Name" required>
+                        <small>Enter the Patient's First Name</small>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <label for="middleName">Middle Initial(s):</label>
+                        <input class="form-control" type="text" name="middleName" id="middleName" placeholder="Enter Middle Initial(s)">
+                    </div>
+                    <div class="col-md-4 col-lg-4 pr-0">
+                        <label for="lastName">*Last Name:</label>
+                        <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Enter First Name" required>
+                        <small>Enter the Patient's Last Name</small>
+                    </div>
+                </div>
+                <div class="d-flex m-0 pb-4">
+                    <div class="col-md-4 col-lg-4 pl-0">
+                        <label for="dateOfBirth">*Date of Birth:</label>
+                        <input class="form-control" type="date" name="dateOfBirth" id="dateOfBirth" placeholder="Enter First Name" required>
+                        <small>Enter the Patient's Date of Birth</small>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <label for="department">*Department:</label>
+                        <select class="form-control" name="department" id="department" required>
+                            <option selected value="select">Select...</option>
+                            <option value="Cardio">Cardiology</option>
+                            <option value="ENT">Ear, Nose and Throat</option>
+                            <option value="Primary">Primary Care</option>
+                            <option value="Unassigned">[Unassigned]</option>
+                        </select>
+                        <small>Select the department providing care</small>
+                    </div>
+                    <div class="col-md-4 col-lg-4 pr-0">
+                        <span>*Is this an Out-patient?</span>
+                        <div>
+                            <label for="yes" class="pt-3 pr-3">
+                                <input type="radio" name="outPatient" id="yes" value="Yes">Yes
+                            </label>
+                            <label for="no" class="pt-3 pl-3">
+                                <input type="radio" name="outPatient" id="no" value="No">No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="float-right button-area">
+                <!-- <button type="reset" id = "reset" class="btn btn-secondary mr-3 pl-5 pr-5" value="reset">Reset</button>
+                <button type="submit" id = "submit" class="btn btn-primary mr-3 pl-5 pr-5" value="registerProduct">Register Patient</button> -->
+                <button type="reset" id = "reset" class="btnReset" value="reset">Reset</button>
+                <button type="submit" id = "submit" class="btnSubmit" value="registerProduct">Register Patient</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="fixed-bottom">
+            <span class="float-left">Amrit Raj Sagar ::: CS472-WAP</span>
+            <span class="float-right">HCMC &copy; March 2021</span>
+        </div>
+    </footer>
+</body>
+</html>

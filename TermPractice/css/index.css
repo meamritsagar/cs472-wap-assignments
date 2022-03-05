@@ -1,0 +1,88 @@
+/* CSS for Home Page (index.html and patients.html) */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    border-left: 2px solid #FFFFFF;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navbar {
+    color: #FFFFFF;
+    background-color: #E46428D8;
+}
+
+.navbar .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar .navbar-brand:hover {
+    color: #FFFFFF;
+}
+
+.fixed-bottom {
+    background-color: lightgray;
+    padding: 8px;
+}
+
+.sub {
+    font-style: italic;
+}
+
+.email {
+    color: orange;
+}
+
+.phone {
+    text-decoration: underline;
+}
+
+.btnSubmit {
+    background-color: #E46428D8;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 3px;
+}
+
+.btnSubmit:hover {
+    background-color: #FD5101D8;
+}
+
+.btnReset {
+    background-color: darkgray;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 3px;
+}
+
+.btnReset:hover {
+    background-color: gray;
+}
