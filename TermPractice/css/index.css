@@ -86,3 +86,18 @@ body {
 .btnReset:hover {
     background-color: gray;
 }
+
+img.floatRight {
+    float: right;
+    margin-right: 10px;
+}
+
+.imgrep {
+    background-image: url("../image/mainImage.png");
+    background-repeat: repeat-x;
+    height: 200px;
+}
+
+.bullet {
+    color: brown;
+}
