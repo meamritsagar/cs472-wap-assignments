@@ -19,7 +19,7 @@ let tickingCounterClock = setInterval(function () {
     const currentdate = new Date();
     let date = weekday[currentdate.getDay()] + ", " +
     currentdate.getDate() + " " +
-    month[(currentdate.getMonth() + 1)] + " " +
+    month[(currentdate.getMonth())] + " " +
     currentdate.getFullYear();// + " " +
     // currentdate.getHours() + ":" +
     // currentdate.getMinutes() + ":" +
