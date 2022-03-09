@@ -41,46 +41,48 @@ console.log(add7());
 console.log(add7());
 
 // Question 10:
-var employee = (function() {
+const Employee = (function() {
     let name = null;
     let age = null;
     let salary = null;
 
-    getAge = function() {
+    const getAge = function() {
         return age;
     }
 
-    getSalary = function() {
+    const getSalary = function() {
         return salary;
     }
 
-    getName = function() {
+    const getName = function() {
         return name;
     }
 
-    setAge = function(newAge) {
+    const setAge = function(newAge) {
         age = newAge;
     }
 
-    setSalary = function(newSalary) {
+    const setSalary = function(newSalary) {
         salary = newSalary;
     }
 
-    setName = function(newName) {
+    const setName = function(newName) {
         name = newName;
     }
 
-    increaseSalary = function(percentage) {
+    const increaseSalary = function(percentage) {
         let incSalary = getSalary() + (percentage * getSalary())/100; 
         setSalary(incSalary);
     }
 
-    incrementAge = function() {
+    const incrementAge = function() {
         let incAge = getAge() + 1;
         setAge(incAge);
     }
 
     return {
+        getName: getName,
+        getAge: getAge,
         setAge: setAge,
         setSalary: setSalary,
         setName: setName,
@@ -89,9 +91,9 @@ var employee = (function() {
         incrementAge: incrementAge
     }
 })();
-employee.setSalary(200);
-employee.increaseSalary(10)
-console.log(getSalary());
+Employee.setSalary(200);
+Employee.increaseSalary(10)
+console.log(Employee.getSalary());
 
 // Question 11:
 // var employee = (function() {
@@ -142,18 +144,32 @@ console.log(getSalary());
 //     }
 // })();
 
-employee.address = (function() {
-    let address = null;
-    getAddress = function() {
-        return address;
-    }
-    setAddress = function(newAddress) {
-        address = newAddress;
-    }
-    return {
-        getAddress: getAddress,
-        setAddress: setAddress
-    }
-})();
-employee.address.setAddress("1000 N 4th Street");
-console.log(employee.address.getAddress());
+Employee.address = null;
+Employee.setAddress = function(newAddress) {
+    this.address = newAddress;
+};
+Employee.getAddress = function() {
+    return this.address;
+};
+Employee.setAddress("1000 N 4th Street");
+console.log(Employee.getAddress());
+
+// Define a new constructor funtion named, EmployeeWithAddress
+function EmployeeWithAddress(address) {
+    this.address = address;
+};
+EmployeeWithAddress.prototype = Employee;
+EmployeeWithAddress.prototype.setAddress = function(newAddress) {
+    this.address = newAddress;
+};
+EmployeeWithAddress.prototype.getAddress = function() {
+    return this.address;
+};
+EmployeeWithAddress.prototype.toString = function() {
+    return `{ Name: ${this.getName()}, Age: ${this.getAge()}, Salary: ${this.getSalary()}, Address: ${this.address}}`;
+};
+const empWithAddr = new EmployeeWithAddress(null);
+empWithAddr.setName("Anna Lynn Smith");
+empWithAddr.setAge("33");
+empWithAddr.setAddress("155 Kings Lane");
+console.log(empWithAddr.toString());
