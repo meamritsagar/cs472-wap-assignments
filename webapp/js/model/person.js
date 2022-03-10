@@ -2,7 +2,7 @@
  * Assignment 10: WebApp
  * person.js
  */
-"use srict";
+"use strict";
 // JavaScript ES6 Class
 export class Person {
     #name = null;

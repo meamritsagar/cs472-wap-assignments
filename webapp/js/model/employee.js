@@ -2,7 +2,7 @@
  * Assignment 10: WebApp
  * employee.js
  */
- "use srict";
+ "use strict";
 // Importing the Person Class
 import { Person } from "./person.js";
 
