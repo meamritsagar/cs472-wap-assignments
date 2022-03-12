@@ -34,22 +34,22 @@ $(document).ready(function() {
         };
 
         listOfPatient.push(listOfPatientObj);
-        insertIntoTable(listOfPatient);
-        $("#formNewPatient").trigger("reset");
+        // insertIntoTable(listOfPatient);
+        // $("#formNewPatient").trigger("reset");
 
         // Using JQuery-------------------
-        // let listOfPatient = `<tr>
-        //     <td>${patientId}</td>
-        //     <td>${firstName}</td>
-        //     <td>${middleInitials}</td>
-        //     <td>${lastName}</td>
-        //     <td>${dateOfBirth}</td>
-        //     <td>${department}</td>
-        //     <td>${outPatientFlag}</td>
-        // </tr>`;
+        let insertListOfPatient = `<tr>
+            <td>${patientId}</td>
+            <td>${firstName}</td>
+            <td>${middleInitials}</td>
+            <td>${lastName}</td>
+            <td>${dateOfBirth}</td>
+            <td>${department}</td>
+            <td>${outPatientFlag}</td>
+        </tr>`;
 
-        // $("#tbodyPatientsList").append(listOfPatient);
-        // $("#formNewPatient").trigger("reset");
+        $("#tbodyPatientsList").append(insertListOfPatient);
+        $("#formNewPatient").trigger("reset");
 
         // Using DOM API--------------------
     /*
