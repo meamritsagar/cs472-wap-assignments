@@ -111,7 +111,7 @@ $(document).ready(function() {
         let birthDate = new Date(dateString);
         let age = today.getFullYear() - birthDate.getFullYear();
         let m = today.getMonth() - birthDate.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+        if (m < 0 || (m === 0 && today.getDate() < (birthDate.getDate()+1))) 
         {
             age--;
         }
@@ -122,7 +122,7 @@ $(document).ready(function() {
     $("#chkElderlyPatients").click(function() {
         if ($(this).is(":checked")) {
             $("#chkShowOutPatients").attr("disabled", true);
-            let filterElderly = listOfPatient.filter(obj => (getAge(obj.dateOfBirth) > 65));
+            let filterElderly = listOfPatient.filter(obj => (getAge(obj.dateOfBirth) >= 65));
             insertIntoTable(filterElderly);
         } else {
             $("#chkShowOutPatients").removeAttr("disabled");
