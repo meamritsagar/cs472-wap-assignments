@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-bzjLLgZOhgXbSvSc5A9LWWo/mSIYf7U7nFbmYIB2Lgmuiw3vKGJuu+abKoaTx4W6" crossorigin="anonymous">
+</head>
+<body class="container p-5">
+    <h1>Simple Calculator</h1>
+    <form action="/calculate" id="calculation" method="post">
+        <div>
+            <h3>Enter the Numbers for Mathematical Operations:</h3>
+            <div class="form-group">
+                <label for="first">First Number:<span class="text-danger">*</span></label>
+                <input class="form-control" type="number" name="first" id="first" step="0.01" placeholder="Enter First Number" required>
+            </div>
+            <div class="form-group">
+                <label for="second">Second Number:<span class="text-danger">*</span></label>
+                <input class="form-control" type="number" name="second" id="second" step="0.01" placeholder="Enter Second Number" required>
+            </div>
+            <div class="form-group">
+                <label for="operation">Calculator Operation:<span class="text-danger">*</span></label>
+                <select required class="form-control" name="operation" id="operation">
+                    <option value="">--Select--</option>
+                    <option value="add">Addition</option>
+                    <option value="subtrat">Subtraction</option>
+                    <option value="multiply">Multiplication</option>
+                    <option value="divide">Division</option>
+                </select>
+            </div>
+        </div>
+        <div class="float-right">
+            <button type="submit" id="calculate" class="btn btn-secondary">Calculate</button>
+        </div>
+    </form>
+</body>
+</html>
