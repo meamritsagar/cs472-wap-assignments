@@ -10,7 +10,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const calculate = require("./public/js/calculator.js");
+const calculate = require("./model/calculator.js");
 
 // Default Middlewares
 app.use(express.urlencoded({ extended: false }));
