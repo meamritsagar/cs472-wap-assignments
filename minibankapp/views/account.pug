@@ -73,9 +73,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    for account in accounts
+                    for account, index in accounts
                         tr
-                            td #{account.accountId}
+                            td #{index+1}
+                            //- td #{account.accountId}
                             td #{account.txtAccountNo}
                             td #{account.txtCustomerName}
                             td #{account.ddlAccountType}
