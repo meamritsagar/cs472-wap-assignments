@@ -25,7 +25,7 @@
          const account = new Account(null, req.body.txtAccountNo, req.body.txtCustomerName, req.body.ddlAccountType);
          try {
             const opRes = await accountDAO.saveAccount(account);
-            console.log(`Controller: Save Account output: ${opRes}`);
+            // console.log(`Controller: Save Account output: ${opRes}`);
             return opRes;
          } catch (error) {
             res.status(500);

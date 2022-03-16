@@ -7,13 +7,20 @@
 "use strict";
 
 const dbConnectionMgr = require("../dbconnectionmgr");
+const Account = require("../../model/account");
 
 const accountDAO = (function() {
     const getAccounts = async function() {
         const qryStrGetAccounts = `SELECT * FROM accounts`;
         try {
             const dbConnection = dbConnectionMgr.getConnection();
-            const [accounts] = await dbConnection.promise().query(qryStrGetAccounts);
+            // const [accounts] = await dbConnection.promise().query(qryStrGetAccounts);
+            const accountsDBRows = await dbConnection.promise().query(qryStrGetAccounts);
+            const accounts = [];
+            for (let account of accountsDBRows[0]) {
+                accounts.push(new Account(account.accountId, account.txtAccountNo, account.txtCustomerName, account.ddlAccountType));
+            }
+            // close connection
             return accounts;
         } catch (error) {
             console.log(`DB Access Error: ${error}`);
@@ -28,7 +35,8 @@ const accountDAO = (function() {
             try {
                 const dbConnection = dbConnectionMgr.getConnection();
                 const saveOpResult = await dbConnection.promise().execute(cmdStrSaveAccount);
-                console.log(saveOpResult);
+                // console.log(saveOpResult);
+                // close connection
                 return saveOpResult;
             } catch (error) {
                 console.log(`DB Access Error: ${error}`);

@@ -23,7 +23,7 @@ accountRouter.get("/account", async (req, res) => {
 
 accountRouter.post("/account", async (req, res) => {
     const result = await accountController.addNewAccount(req, res);
-    console.log(result);
+    // console.log(result);
     res.redirect(303, "/account");
 });
 

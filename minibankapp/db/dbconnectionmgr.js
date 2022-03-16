@@ -14,6 +14,7 @@ const dbConnectionMgr = (function(dbConfig) {
      * Makes and returns a Database Connection pool using the given config
      */
     const getConnection = function() {
+        // return mysql.createConnection(dbConfig);
         return mysql.createPool(dbConfig);
     }
     return {
